@@ -1,0 +1,6 @@
+{
+  "name": "Direct Response Deliverable Studio",
+  "description": "Criação e visualização de entregáveis de alta conversão para produtos de Direct Response com integração ao Google Drive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
