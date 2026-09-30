@@ -16,18 +16,13 @@ export default function App() {
           <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-white font-black shadow-md shadow-pink-400/30">
             <Sparkles className="w-5 h-5" />
           </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <h1 className="font-black text-sm sm:text-base text-pink-950 tracking-tight">
-                {portalConfig.portalName}
-              </h1>
-              <span className="hidden md:inline px-2.5 py-0.5 text-[10px] font-black bg-pink-100 text-pink-700 border border-pink-200 rounded-full">
-                🎀 Clube de Bonequinhas
-              </span>
-            </div>
-            <p className="text-[11px] text-pink-800/70 truncate max-w-[200px] sm:max-w-xs font-medium">
-              {kits.length} Kits de Brinquedos & Atividades
-            </p>
+          <div className="flex items-center gap-2">
+            <h1 className="font-black text-sm sm:text-base text-pink-950 tracking-tight">
+              {portalConfig.portalName}
+            </h1>
+            <span className="hidden md:inline px-2.5 py-0.5 text-[10px] font-black bg-pink-100 text-pink-700 border border-pink-200 rounded-full">
+              🎀 Clube de Bonequinhas
+            </span>
           </div>
         </div>
 

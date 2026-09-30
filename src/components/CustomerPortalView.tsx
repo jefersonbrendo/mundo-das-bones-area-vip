@@ -62,8 +62,6 @@ export const CustomerPortalView: React.FC<CustomerPortalViewProps> = ({
     { id: 'guia', label: 'GUIA', icon: '📖' },
   ];
 
-  const totalPagesCount = kits.reduce((acc, k) => acc + (k.pageCount || 0), 0);
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#fff5f8] via-[#fff0f5] to-[#fdf4f8] text-neutral-800 flex flex-col font-sans selection:bg-pink-300 selection:text-pink-900">
       
@@ -139,8 +137,7 @@ export const CustomerPortalView: React.FC<CustomerPortalViewProps> = ({
       <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-8 space-y-8">
         
         {/* Results Counter & Active Filter Pills */}
-        <div className="flex items-center justify-between text-xs text-pink-900/60 font-semibold">
-          <span>Mostrando {filteredKits.length} kits prontinhos para recortar e brincar</span>
+        <div className="flex items-center justify-end text-xs text-pink-900/60 font-semibold">
           {(showOnlyFavorites || searchQuery || selectedCategory !== 'todos') && (
             <button
               onClick={() => {
@@ -222,9 +219,6 @@ export const CustomerPortalView: React.FC<CustomerPortalViewProps> = ({
                       <div className="flex items-center justify-between text-[11px] font-bold">
                         <span className="text-pink-600 bg-pink-50 px-2 py-0.5 rounded-lg border border-pink-100">
                           {kit.categoryLabel}
-                        </span>
-                        <span className="text-pink-700/80 font-black">
-                          {kit.pageCount} {kit.pageCount === 1 ? 'Arquivo' : 'Arquivos'}
                         </span>
                       </div>
 
